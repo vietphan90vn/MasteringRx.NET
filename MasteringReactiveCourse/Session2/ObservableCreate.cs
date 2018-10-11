@@ -21,7 +21,7 @@ namespace MasteringReactiveCourse.Session2
 			return subject;
 		}
 
-        public static void Main(string[] args)
+        public static void Main_OC(string[] args)
 		{
 			Blocking().Inspect("Blocking");
 
