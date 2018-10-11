@@ -15,7 +15,7 @@ namespace MasteringReactiveCourse
             );
         }
 
-        public static IDisposable SubsribeTo<T>(this IObserver<T> observer, IObservable<T> observable)
+        public static IDisposable SubscribeTo<T>(this IObserver<T> observer, IObservable<T> observable)
         {
             return observable.Subscribe(observer);
         }

@@ -11,7 +11,7 @@ namespace MasteringReactiveCourse.Session2
     /// </summary>
     public class ReplaySubjectOverview
     {
-        public static void Main(string[] args)
+        public static void Main_ReplaySubjectOverview(string[] args)
         {
             var time = TimeSpan.FromMilliseconds(500f);
             var marketTimespan = new ReplaySubject<float>(time);

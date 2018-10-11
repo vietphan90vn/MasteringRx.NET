@@ -16,14 +16,14 @@ namespace MasteringReactiveCourse.Session2
             marketConsummer.Inspect("marketConsummer"); // maket consummer subscribe Console.WriteLine
             market.Inspect("market"); // maket subscribe Console.WriteLine
 
-            using (marketConsummer.SubsribeTo(market))
+            using (marketConsummer.SubscribeTo(market))
             {
                 market.OnNext(1, 2, 3);
             }
 
             Console.WriteLine("================================================================");
 
-            using (marketConsummer.SubsribeTo(market))
+            using (marketConsummer.SubscribeTo(market))
             {
                 marketConsummer.OnNext(4, 5, 6);
             }
