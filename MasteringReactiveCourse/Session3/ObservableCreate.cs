@@ -6,7 +6,7 @@ using System.Threading;
 using System.Timers;
 using Timer = System.Timers.Timer;
 
-namespace MasteringReactiveCourse.Session2
+namespace MasteringReactiveCourse.Session3
 {
     public class ObservableCreate
     {

@@ -4,7 +4,7 @@ using System.Reactive;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
-namespace MasteringReactiveCourse.Session2
+namespace MasteringReactiveCourse.Session3
 {
 	public class SimpleFactoryMethods
 	{
