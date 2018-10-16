@@ -17,7 +17,7 @@ namespace MasteringReactiveCourse.Session3
 {
     public class FilteringObservable
     {
-        public static void Main(string[] args)
+        public static void Main_Filtering(string[] args)
 		{
 			// Start a method paraller with main thread
 			var start = Observable.Range(-5, 15);
