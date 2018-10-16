@@ -19,7 +19,36 @@ namespace MasteringReactiveCourse.Session3
     {
         public static void Main(string[] args)
 		{
-			Observable.Return<int>(2).Inspect("SDSD");
+			var subj = new Subject<object>();
+
+			var subOfTypeFloat = subj.OfType<float>();
+			subOfTypeFloat.Inspect("OfType<float>");
+
+			var subCastFloat = subj.Cast<float>();
+			subCastFloat.Inspect("Cast<float>");
+
+			subj.OnNext(1f, 2, 3);
+
+			Console.ReadLine();
+
+			var seq = Observable.Interval(TimeSpan.FromSeconds(1f));
+			seq.Inspect("Seq");
+
+			var timeStamp = seq.Timestamp();
+			timeStamp.Inspect("TimeStamp");
+
+			var timeInterval = seq.TimeInterval();
+			timeInterval.Inspect("TimeInterval");
+
+			Console.ReadLine();
+
+			// Get debug info
+			var seq2 = Observable.Range(0, 4);
+			var seq2Materialize = seq2.Materialize();
+
+			seq2Materialize.Inspect("Materialize");
+
+			Console.ReadLine();
 		}
     }
 }
