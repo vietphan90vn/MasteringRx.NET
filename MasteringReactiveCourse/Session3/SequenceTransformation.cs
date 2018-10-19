@@ -17,7 +17,7 @@ namespace MasteringReactiveCourse.Session3
 {
     public class SequenceTransformation
     {
-        public static void Main(string[] args)
+        public static void Main_ST(string[] args)
 		{
 			var subj = new Subject<object>();
 
