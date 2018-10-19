@@ -17,7 +17,7 @@ namespace MasteringReactiveCourse.Session3
 {
     public class SequenceAggregation
     {
-        public static void Main(string[] args)
+        public static void Main_SA(string[] args)
 		{
 			var sub = new Subject<int>();
 
