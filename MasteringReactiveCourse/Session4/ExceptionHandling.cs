@@ -10,14 +10,12 @@ using System.Timers;
 using System.Threading.Tasks;
 using System.Reactive.Threading.Tasks;
 
-
 namespace MasteringReactiveCourse.Session4
 {
     public class ExceptionHandling
     {
-		public static void Main(string[] args)
+		public static void Main_EH(string[] args)
 		{
-
 		}
     }
 }
